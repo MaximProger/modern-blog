@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_mains",
+  "info": {
+    "displayName": "resource",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
