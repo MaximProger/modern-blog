@@ -1,10 +1,8 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Navbar, NewsList } from "@/components";
+import { Hero, Layout, NewsList } from "@/components";
 import { fetchAPI } from "./api";
 import { IArticle, ICategory, IHomePage } from "../../types";
-
-const inter = Inter({ subsets: ["latin"] });
 
 interface IProps {
   categories: ICategory[];
@@ -16,16 +14,14 @@ export default function Home({ categories, homepage, articles }: IProps) {
   console.log(articles);
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center ${inter.className}`}
-    >
-      <Navbar categories={categories} />
-      <NewsList
+    <Layout categories={categories}>
+      <Hero
         title={homepage.attributes.main.title}
         description={homepage.attributes.main.description}
-        articles={articles}
-      />
-    </main>
+      >
+        <NewsList articles={articles} />
+      </Hero>
+    </Layout>
   );
 }
 

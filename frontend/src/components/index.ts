@@ -1,4 +1,5 @@
-import Navbar from "./Navbar";
 import NewsList from "./NewsList";
+import Layout from "./Layout";
+import Hero from "./Hero";
 
-export {Navbar, NewsList}
+export {NewsList, Layout, Hero}
