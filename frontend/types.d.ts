@@ -38,7 +38,7 @@ export interface IHomePage {
 export interface IHomePageAttributes {
   createdAt: string
   updatedAt: string
-  main: Main
+  main: IMain
   seo: Seo
 }
 
@@ -214,4 +214,51 @@ export interface IPictureAttributes {
   provider_metadata: any
   createdAt: string
   updatedAt: string
+}
+export interface IContext {
+  id: number
+  attributes: IContextAttributes
+}
+
+export interface IContextAttributes {
+  siteName: string
+  createdAt: string
+  updatedAt: string
+  favicon: IFavicon
+  defaultSeo: IDefaultSeo
+}
+
+export interface IFavicon {
+  data: IFaviconData
+}
+
+export interface IFaviconData {
+  id: number
+  attributes: IFaviconAttributes
+}
+
+export interface IFaviconAttributes {
+  name: string
+  alternativeText: string
+  caption: string
+  width: number
+  height: number
+  formats: IFormats
+  hash: string
+  ext: string
+  mime: string
+  size: number
+  url: string
+  previewUrl: any
+  provider: string
+  provider_metadata: any
+  createdAt: string
+  updatedAt: string
+}
+
+export interface IDefaultSeo {
+  id: number
+  metaTitle: string
+  metaDescription: string
+  shareImage: IShareImage
 }

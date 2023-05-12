@@ -5,8 +5,9 @@ import { createContext } from "react";
 import { fetchAPI } from "./api";
 import App from "next/app";
 import Head from "next/head";
+import { IContextAttributes } from "../../types";
 
-export const GlobalContext = createContext({});
+export const GlobalContext = createContext({} as IContextAttributes);
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const { global } = pageProps;

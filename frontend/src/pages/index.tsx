@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { Hero, Layout, NewsList } from "@/components";
+import { Hero, Layout, NewsList, Seo } from "@/components";
 import { fetchAPI } from "./api";
 import { IArticle, ICategory, IHomePage } from "../../types";
 
@@ -11,10 +11,9 @@ interface IProps {
 }
 
 export default function Home({ categories, homepage, articles }: IProps) {
-  console.log(articles);
-
   return (
     <Layout categories={categories}>
+      <Seo seo={homepage.attributes.seo} />
       <Hero
         title={homepage.attributes.main.title}
         description={homepage.attributes.main.description}
