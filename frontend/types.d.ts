@@ -49,10 +49,11 @@ export interface IMain {
 }
 
 export interface ISeo {
-  id: number
+  id?: number
   metaTitle: string
   metaDescription: string
   shareImage: IShareImage
+  article?: boolean
 }
 
 export interface IShareImage {
@@ -152,7 +153,8 @@ export interface IArticleAttributes {
   updatedAt: string
   publishedAt: string
   category: IArticleCategory
-  author: IArticleAuthor
+  author: IArticleAuthor,
+  image: IPicture
 }
 
 export interface IArticleCategory {
