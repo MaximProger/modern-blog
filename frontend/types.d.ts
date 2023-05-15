@@ -181,15 +181,21 @@ export interface IArticleAuthor {
 
 export interface IArticleAuthorData {
   id: number
-  attributes: IArticleAuthorAttributes
+  attributes: IAuthorAttributes
 }
 
-export interface IArticleAuthorAttributes {
+export interface IAuthor {
+  id: number
+  attributes: IAuthorAttributes
+}
+
+export interface IAuthorAttributes {
   name: string
   email: string
   createdAt: string
   updatedAt: string
   picture: IPicture
+  slug: string
 }
 
 export interface IPicture {

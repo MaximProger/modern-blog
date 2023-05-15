@@ -32,7 +32,10 @@ const Article = ({ article, categories }: IProps) => {
         <article className="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
           <header className="mb-4 lg:mb-6 not-format">
             <address className="flex items-center mb-6 not-italic">
-              <div className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white">
+              <Link
+                href={`/author/${author.data.attributes.slug}`}
+                className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white"
+              >
                 <Image
                   className="mr-4 w-16 h-16 rounded-full"
                   src={getStrapiMedia(author.data.attributes.picture)}
@@ -41,13 +44,12 @@ const Article = ({ article, categories }: IProps) => {
                   height={64}
                 />
                 <div>
-                  <a
-                    href="#"
+                  <p
                     rel="author"
                     className="text-xl font-bold text-gray-900 dark:text-white"
                   >
                     {author.data.attributes.name}
-                  </a>
+                  </p>
                   <p className="text-base font-light text-gray-500 dark:text-gray-400">
                     {author.data.attributes.email}
                   </p>
@@ -57,7 +59,7 @@ const Article = ({ article, categories }: IProps) => {
                     </Moment>
                   </p>
                 </div>
-              </div>
+              </Link>
             </address>
             <Link
               href={`/category/${category.data.attributes.slug}`}

@@ -43,7 +43,10 @@ const NewsCard = ({ article }: IProps) => {
         {article.attributes.description}
       </p>
       <div className="flex justify-between items-center mt-auto">
-        <div className="flex items-center space-x-4">
+        <Link
+          href={`/author/${author.data.attributes.slug}`}
+          className="flex items-center space-x-4"
+        >
           <Image
             className="w-[28px] h-[28px] rounded-full"
             src={getStrapiMedia(author.data.attributes.picture)}
@@ -54,7 +57,7 @@ const NewsCard = ({ article }: IProps) => {
           <span className="font-medium dark:text-white">
             {author.data.attributes.name}
           </span>
-        </div>
+        </Link>
         <Link
           href={`/article/${article.attributes.slug}`}
           className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
