@@ -11,7 +11,6 @@ export function getStrapiURL(path = "") {
   }${path}`;
 }
 
-
 /**
  * Helper to make GET requests to Strapi API endpoints
  * @param {string} path Path of the API route
