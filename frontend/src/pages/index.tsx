@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import { Hero, Layout, NewsList, Seo } from "@/components";
 import { fetchAPI } from "./api";
 import { IArticle, ICategory, IHomePage } from "../../types";

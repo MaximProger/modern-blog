@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { GlobalContext } from "@/pages/_app";
 import { getStrapiMedia } from "@/pages/api/media";
 import { ISeo } from "../../types";
+import { capitalized } from "@/helpers/functions";
 
 interface IProps {
   seo: ISeo;
@@ -24,7 +25,7 @@ const Seo = ({ seo }: IProps) => {
     <Head>
       {fullSeo.metaTitle && (
         <>
-          <title>{fullSeo.metaTitle}</title>
+          <title>{capitalized(fullSeo.metaTitle)}</title>
           <meta property="og:title" content={fullSeo.metaTitle} />
           <meta name="twitter:title" content={fullSeo.metaTitle} />
         </>

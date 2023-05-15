@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Moment from "react-moment";
-import { IArticle } from "../../types";
+import { IArticle, ICategoryDaum } from "../../types";
 import { getStrapiMedia } from "@/pages/api/media";
 
 interface IProps {
-  article: IArticle;
+  article: IArticle | ICategoryDaum;
 }
 
 const NewsCard = ({ article }: IProps) => {

@@ -28,6 +28,8 @@ export interface ICategoryArticleAttributes {
   createdAt: string
   updatedAt: string
   publishedAt: string
+  category: IArticleCategory
+  author: IArticleAuthor,
 }
 
 export interface IHomePage {
@@ -52,7 +54,7 @@ export interface ISeo {
   id?: number
   metaTitle: string
   metaDescription: string
-  shareImage: IShareImage
+  shareImage?: IShareImage
   article?: boolean
 }
 

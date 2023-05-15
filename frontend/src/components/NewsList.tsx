@@ -1,9 +1,9 @@
 import React from "react";
 import NewsCard from "./NewsCard";
-import { IArticle } from "../../types";
+import { IArticle, ICategoryDaum } from "../../types";
 
 interface IProps {
-  articles: IArticle[];
+  articles: IArticle[] | ICategoryDaum[];
 }
 
 const NewsList = ({ articles }: IProps) => {
