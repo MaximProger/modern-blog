@@ -6,8 +6,7 @@
     "@strapi/strapi": "4.10.5",
     "better-sqlite3": "8.0.1",
     "lodash.set": "^4.3.2",
-    "mime-types": "^2.1.27",
-    "strapi-plugin-vercel-deploy": "^1.4.0"
+    "mime-types": "^2.1.27"
   },
   "name": "backend",
   "private": true,
