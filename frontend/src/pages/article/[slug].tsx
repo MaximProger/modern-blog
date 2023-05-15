@@ -5,7 +5,7 @@ import ReactMarkDown from "react-markdown";
 
 import { Layout, Seo } from "@/components";
 import { fetchAPI } from "../api";
-import { IArticle, ICategory } from "../../../types";
+import { IArticle, ICategory } from "../../types";
 import { getStrapiMedia } from "../api/media";
 import Link from "next/link";
 

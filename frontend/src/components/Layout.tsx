@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import Navbar from "./Navbar";
 import { Inter } from "next/font/google";
-import { ICategory } from "../../types";
+import { ICategory } from "../types";
 
 const inter = Inter({ subsets: ["latin"] });
 

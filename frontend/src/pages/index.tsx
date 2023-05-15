@@ -1,6 +1,6 @@
 import { Hero, Layout, NewsList, Seo } from "@/components";
 import { fetchAPI } from "./api";
-import { IArticle, ICategory, IHomePage } from "../../types";
+import { IArticle, ICategory, IHomePage } from "../types";
 
 interface IProps {
   categories: ICategory[];

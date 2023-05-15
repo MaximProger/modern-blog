@@ -41,7 +41,7 @@ export interface IHomePageAttributes {
   createdAt: string
   updatedAt: string
   main: IMain
-  seo: Seo
+  seo: ISeo
 }
 
 export interface IMain {
@@ -73,7 +73,7 @@ export interface IDataAttributes {
   caption: string
   width: number
   height: number
-  formats: Formats
+  formats: IFormats
   hash: string
   ext: string
   mime: string

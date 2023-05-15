@@ -1,4 +1,4 @@
-import { IPicture } from "../../../types";
+import { IPicture } from "../../types";
 import { getStrapiURL } from "./";
 
 export function getStrapiMedia(media: IPicture) {

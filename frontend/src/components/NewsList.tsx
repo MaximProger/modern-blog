@@ -1,6 +1,6 @@
 import React from "react";
 import NewsCard from "./NewsCard";
-import { IArticle, ICategoryDaum } from "../../types";
+import { IArticle, ICategoryDaum } from "../types";
 
 interface IProps {
   articles: IArticle[] | ICategoryDaum[];

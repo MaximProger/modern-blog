@@ -2,7 +2,7 @@ import Head from "next/head";
 import { useContext } from "react";
 import { GlobalContext } from "@/pages/_app";
 import { getStrapiMedia } from "@/pages/api/media";
-import { ISeo } from "../../types";
+import { ISeo } from "../types";
 import { capitalized } from "@/helpers/functions";
 
 interface IProps {

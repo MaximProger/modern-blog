@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { getStrapiMedia } from "../api/media";
 import { fetchAPI } from "../api";
-import { IAuthor, ICategory } from "../../../types";
+import { IAuthor, ICategory } from "../../types";
 
 interface IProps {
   author: IAuthor;

@@ -5,7 +5,7 @@ import { createContext } from "react";
 import { fetchAPI } from "./api";
 import App from "next/app";
 import Head from "next/head";
-import { IContextAttributes } from "../../types";
+import { IContextAttributes } from "../types";
 
 export const GlobalContext = createContext({} as IContextAttributes);
 
